@@ -1,0 +1,372 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background-color: #121212;
+    width: 340px;
+    border-radius: 1rem;
+    /*16px */
+    margin: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.5rem;
+
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 100%;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 1;
+    margin-right: 1rem;
+}
+
+
+.box {
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1.25rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #232323;
+}
+
+.box-p2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    background-color: #232323;
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    color: black;
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge {
+    background-color: #000;
+    color: #fff;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons {
+    margin: 0.5rem;
+    opacity: 0.5;
+    justify-content: space-between;
+    display: flex;
+}
+
+.sticky-nav-icons:hover {
+    opacity: 1;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sticky-nav-options button {
+    margin-left: 0.5rem;
+}
+
+@media (max_width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    /* border-radius: 0.5rem; */
+}
+
+.card-img:hover {
+
+    /* box-shadow:  #a10d0d; */
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.album {
+    width: 25%;
+}
+
+.album-container {
+    display: flex;
+    align-items: center;
+}
+
+.cards-img {
+    width: 15%;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+.cards-img:hover {
+    opacity: 2;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.song-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.artist-name {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #b3b3b3;
+}
+
+.artist-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+.extra-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+.extra-icons i {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.player {
+    width: 50%;
+}
+
+.controls {
+    width: 25%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #1bd760;
+    border-radius: 100%;
+    margin-top: -6px;
+
+}
+
+.control-icon {
+    justify-content: space-between;
+    display: flex;
+    margin-right: 1rem;
+    padding-right: 20%;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+}
+
+.volume i {
+    /* margin-right: 10px; */
+    margin-left: 1.75rem;
+
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.volume-slider {
+    width: 100px;
+}
